@@ -1,0 +1,128 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%)
+}
+
+*{
+    color: var(--Transparent-white);
+    font-size: 15px;
+    margin: 0;
+}
+
+.component{
+    padding: 2.2rem;
+    width:200px;
+}
+ .sedans{
+    background-color:var(--Bright-orange) ;
+    border-radius: .6em 0 0 .6em;
+    
+}
+
+.component h1{
+color: var(--Very-light-gray);
+text-transform: uppercase;
+font-size: 2rem;
+font-family: "Big Shoulders Display", sans-serif;
+font-weight: 700;
+
+}
+.component p{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.suv{
+    background-color: var(--Dark-cyan);
+}
+
+.luxury{
+    background-color: var(--Very-dark-cyan);
+    font-size: 1rem;
+    border-radius: 0 .6em .6em 0;
+}
+
+.child{
+    margin-bottom: 1.5rem;
+}
+
+ .link{
+ margin-top: 4rem;
+}
+
+.link a{
+    text-decoration: none;
+    background-color: var(--Very-light-gray);
+    padding: .5rem 1.5rem;
+    border-radius: 3rem;
+    font-size: .8rem;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.sedans a:active{
+    background-color: var(--Bright-orange);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.sedans a{
+    color: var(--Bright-orange);
+}
+.luxury a{
+    color: var(--Very-dark-cyan);
+}
+.luxury a:active{
+    background-color: var(--Very-dark-cyan);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.suv a{
+    color: var(--Dark-cyan);
+}
+.suv a:active{
+    background-color: var(--Dark-cyan);
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+@media (max-width:700px){
+    .component{
+        padding: 3.2rem;
+        width:unset;
+    }
+
+    .component p{
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+    .link{
+        margin-top: 3rem;
+    }
+    .link a{
+        padding: .8rem 2rem;
+        font-size: 1rem;
+    }
+
+    .sedans{
+        background-color:var(--Bright-orange) ;
+        border-radius: .6em .6em 0 0 ;
+        
+    }
+
+    .luxury{
+        border-radius: 0 0 .6em .6em;
+    }
+}

@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Sedan from "./components/Sedan";
+import Suv from "./components/Suv";
+import Luxury from "./components/Luxury";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='container'>
+      <Sedan name="Sedans" lMore="Learn More" />
+       <Suv name="Suvs" lMore="Learn More"/>
+       <Luxury name="Luxury" lMore="Learn More" />
+      </div>
     </div>
   );
 }
